@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
-RUN apt-get update --no-install-recommends && \
-    apt-get install -y ssh bc bison bsdmainutils build-essential curl \
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends ssh bc bison bsdmainutils build-essential curl \
     device-tree-compiler flex g++-multilib gcc-multilib git gnupg gperf \
     lib32ncurses5-dev lib32z1-dev libncurses5-dev git-lfs \
     libsdl1.2-dev libxml2-utils locales lzop \
